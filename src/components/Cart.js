@@ -1,11 +1,11 @@
 import { Card, Button } from "react-bootstrap";
 
-export default function Cart() {
+export default function Cart(props) {
     return (
         <Card>
-            <Card.Title>Title</Card.Title>
+            <Card.Title>{props.title}</Card.Title>
             <Card.Body>
-                <p>Sub Title</p>
+                <p>{props.subtitle}</p>
                 <p>time</p>
                 <Button>Delete</Button>
                 <Button>Edit</Button>
